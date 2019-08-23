@@ -1,0 +1,1109 @@
+/* @charset 编码 */
+/* @media 媒体查询 */
+/* @import 导入其他样式文件 */
+@charset "UTF-8";
+
+@import "rec.css";
+
+/* 字体图标 */
+@font-face {
+    font-family: "iconfont";
+    src: url("../font/iconfont.eot");
+    src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"),
+        url("../font/iconfont.woff2") format("woff2"),
+        url("../font/iconfont.woff") format("woff"),
+        url("../font/iconfont.ttf") format("truetype"),
+        url("../font/iconfont.svg#iconfont") format("svg");
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 主色调 */
+
+.c4 {
+    color: #f40;
+}
+
+.c5 {
+    color: #f50;
+}
+
+
+/* 头部一级导航 */
+
+#header {
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+#headeMessage {
+    height: 35px;
+}
+
+#headeMessage li {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 6px;
+    font-size: 0;
+    position: relative;
+}
+
+#headeMessage a {
+    color: #6c6c6c;
+    font-size: 12px;
+}
+
+#headeMessage a:hover,
+#headeMessage a:hover span {
+    color: #f40;
+}
+
+#headeMessage a.login {
+    color: #f22e00;
+}
+
+#headeMessage span {
+    font-size: 12px;
+}
+
+#headeMessage span.arrow {
+    margin-left: 7px;
+}
+
+#headeMessage li strong {
+    font-size: 12px;
+    color: #f22e00;
+}
+
+#headeMessage li span.store {
+    color: #9c9c9c;
+}
+
+#headeMessage li.line {
+    font-size: 12px;
+    color: #ddd;
+    padding: 0 5px;
+}
+
+/* 头部二级导航 */
+#headeMessage li.myTbh .myTb {
+    display: none;
+    position: absolute;
+    left: -1px;
+    top: 35px;
+    z-index: 10;
+    background: #fff;
+    border: 1px solid #eee;
+    border-top: none;
+    padding: 8px 0;
+}
+
+#headeMessage li.myTbh .myTb a {
+    display: block;
+    line-height: 28px;
+    padding: 0 6px;
+    color: #6c6c6c;
+    white-space: nowrap;
+}
+
+#headeMessage li.myTbh:hover {
+    background: #fff;
+    padding: 0 5px;
+    border: 1px solid #eee;
+    border-top: none;
+    border-bottom: none;
+}
+
+#headeMessage li.myTbh:hover .myTb {
+    display: block;
+}
+
+#headeMessage li.myTbh .myTb:hover {
+    display: block;
+}
+
+#headeMessage li.myTbh a:hover {
+    background: #f5f5f5;
+}
+
+/* 头部搜索 */
+
+#headSearch {
+    background-color: #fff;
+    padding: 23px 0 8px 0;
+}
+
+#headSearch h1 a {
+    display: block;
+    width: 142px;
+    height: 58px;
+    background: url(../img/logo.png) 0 0 no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin-top: 9px;
+    margin-left: 22px;
+}
+
+#headSearch .code {
+    position: relative;
+    top: 1px;
+    width: 74px;
+    height: 88px;
+    border: 1px solid #eee;
+    margin-right: 110px;
+    text-align: center;
+}
+
+#headSearch .code img {
+    width: 62px;
+    height: 62px;
+}
+
+#headSearch .code span.phone {
+    margin: 4px auto 0px;
+    width: 78px;
+    line-height: 20px;
+}
+
+#headSearch .close {
+    position: absolute;
+    left: -16px;
+    widows: 14px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    color: #ddd;
+}
+
+#headSearch .search {
+    width: 630px;
+    margin: 0 auto;
+    position: relative;
+    left: -22px;
+    top: 1px;
+}
+
+#headSearch .searchTab {
+    height: 22px;
+    margin-left: 17px;
+}
+
+#headSearch .searchTab li {
+    float: left;
+    width: 36px;
+    line-height: 22px;
+    margin-right: 4px;
+    color: #f40;
+    text-align: center;
+    cursor: pointer;
+}
+
+#headSearch .searchTab li.active {
+    background-image: linear-gradient(to right, #ff9000, #ff5000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+    border-radius: 6px 6px 0 0;
+    color: #fff;
+    font-weight: bold;
+}
+
+#headSearch .searchContent {
+    height: 40px;
+}
+
+#headSearch .searchBox {
+    width: 556px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid #ff5000;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+#headSearch .searchBox input {
+    width: 472px;
+    height: 36px;
+    line-height: 36px;
+    border: none;
+    text-indent: 10px;
+    position: absolute;
+    z-index: 2;
+    background: transparent;
+}
+
+#headSearch .placeholder {
+    position: absolute;
+    top: 5px;
+    left: 12px;
+}
+
+#headSearch .placeholder i {
+    font-size: 18px;
+}
+
+#headSearch .placeholder span {
+    color: #9c9c9c;
+    vertical-align: 2px;
+}
+
+#headSearch .imgSearch {
+    font-size: 24px;
+    position: absolute;
+    right: 15px;
+}
+
+#headSearch .searchContent button {
+    width: 74px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #ff9000, #ff5000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+    border-radius: 0 20px 20px 0;
+}
+
+#headSearch .hotKey {
+    height: 18px;
+    line-height: 18px;
+    padding: 5px 0;
+}
+
+/* 导航 */
+
+#navLine {
+    background-image: linear-gradient(to right, #ff9000, #ff5000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+}
+
+#nav h2 {
+    width: 190px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    background: #f50;
+}
+
+#nav ul {
+    margin-left: 190px;
+    height: 30px;
+}
+
+#nav ul li {
+    float: left;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 7px;
+    position: relative;
+}
+
+#nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+#nav ul li.size {
+    font-size: 16px;
+    margin: 0 3px;
+    padding: 0 4px;
+}
+
+#nav ul li.bTechnology {
+    background: url(../img/hkj.gif) 0 0 no-repeat;
+}
+
+#nav ul li.bTechnology a {
+    color: transparent;
+}
+
+#nav ul li:hover:before {
+    content: "";
+    width: 23px;
+    height: 11px;
+    background: url(../img/navhover.png);
+    position: absolute;
+    top: -11px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* 首屏内容 */
+#firstScreen .firstLeft {
+    width: 890px;
+}
+
+/* 侧边导航 */
+#firstScreen .firstLeft .sideNav {
+    width: 190px;
+    height: 522px;
+    background: #fff;
+    border: 1px solid #ff5000;
+    border-top: none;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+
+#firstScreen .firstLeft .sideNav li {
+    height: 32px;
+    line-height: 32px;
+    color: #666;
+    padding-left: 25px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+#firstScreen .firstLeft .sideNav li a {
+    font-size: 14px;
+    color: #666;
+}
+
+#firstScreen .firstLeft .sideNav li i {
+    display: inline-block;
+    width: 14px;
+    text-align: center;
+}
+
+#firstScreen .firstLeft .sideNav li span {
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    width: 8px;
+    text-indent: -4px;
+    overflow: hidden;
+}
+
+#firstScreen .firstLeft .sideNav li:hover {
+    background: #ffe4dc;
+    color: #f50;
+}
+
+#firstScreen .firstLeft .sideNav li:hover a {
+    color: #f50;
+}
+
+#firstScreen .firstLeft .sideNav li a:hover {
+    text-decoration: underline;
+}
+
+/* 图片1容器 */
+#firstScreen .firstLeft .img1Box {
+    width: 690px;
+    height: 282px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#firstScreen .firstLeft .pic {
+    width: 520px;
+    position: relative;
+}
+
+#firstScreen .firstLeft .pic .img {
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+}
+
+#firstScreen .firstLeft .pic .img .list {
+    position: absolute;
+    transition: left .2s;
+}
+
+#firstScreen .firstLeft .pic button {
+    width: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
+
+#firstScreen .firstLeft .pic button.leftBtn {
+    left: 0;
+    border-radius: 0 15px 15px 0;
+}
+
+#firstScreen .firstLeft .pic button.rightBtn {
+    right: 0;
+    border-radius: 15px 0 0 15px;
+}
+
+#firstScreen .firstLeft .pic .circle {
+    width: 70px;
+    height: 13px;
+    line-height: 13px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#firstScreen .firstLeft .pic .circle span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0 3px;
+}
+
+#firstScreen .firstLeft .pic .circle span.active {
+    background-color: #ff5000;
+}
+
+#firstScreen .firstLeft .ad {
+    width: 160px;
+}
+
+#firstScreen .firstLeft .ad img {
+    width: 160px;
+}
+
+#firstScreen .firstLeft .pic:hover button {
+    display: block;
+}
+
+#firstScreen .firstLeft .pic button:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* 图片2容器 */
+#firstScreen .firstLeft .img2Box {
+    width: 690px;
+    height: 220px;
+    margin-top: 10px;
+}
+
+#firstScreen .firstLeft .img2Box .picTitle {
+    height: 21px;
+}
+
+#firstScreen .firstLeft .img2Box .picTitle .text {
+    height: 18px;
+    line-height: 18px;
+}
+
+#firstScreen .firstLeft .img2Box .picTitle .text .bg {
+    background: url(../img/cat.png) no-repeat left;
+    background-position: 2px 0;
+    padding-left: 136px;
+    color: #666;
+}
+
+#firstScreen .firstLeft .img2Box .picTitle .text i {
+    color: #ff1648;
+}
+
+#firstScreen .firstLeft .img2Box .picTitle .text span:nth-child(2) {
+    position: relative;
+    top: -1px;
+}
+
+#firstScreen .firstLeft .img2Box .picTitle .line {
+    position: relative;
+    height: 3px;
+    background-color: #ff1648;
+}
+
+#firstScreen .firstLeft .img2Box .picTitle .line span {
+    position: absolute;
+    left: 0;
+    width: 87px;
+    height: 5px;
+    background-color: #000;
+}
+
+#firstScreen .firstLeft .img2Box .img {
+    width: 521px;
+    height: 199px;
+    background: #fff;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#firstScreen .firstLeft .img2Box .img img {
+    margin-left: 7px;
+}
+
+#firstScreen .firstLeft .img2Box .ad .title {
+    position: relative;
+    top: -2px;
+    line-height: 19px;
+    color: #a1a1a1;
+}
+
+/* 淘宝头条 */
+#firstScreen .firstLeft .news {
+    width: 890px;
+    height: 100px;
+    background-color: #fff;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 14px 14px 12px 20px;
+}
+
+#firstScreen .firstLeft .news .hd {
+    background: url(../img/news.png) 0 center no-repeat;
+    margin-top: 4px;
+}
+
+#firstScreen .firstLeft .news .hd h3 {
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+#firstScreen .firstLeft .news .hd p {
+    color: #999;
+    width: 180px;
+    line-height: 24px;
+    position: relative;
+    top: 17px;
+}
+
+#firstScreen .firstLeft .news .newList {
+    width: 676px;
+    height: 73px;
+    overflow: hidden;
+    position: relative;
+}
+
+#firstScreen .firstLeft .news .newList .img {
+    margin-right: 15px;
+}
+
+#firstScreen .firstLeft .news .newList .img img {
+    width: 130px;
+    height: 73px;
+    position: relative;
+    top: 2px;
+}
+
+#firstScreen .firstLeft .news .newList h4 {
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: normal;
+    position: relative;
+    top: 2px;
+    right: 1px;
+}
+
+#firstScreen .firstLeft .news .newList h4 a {
+    color: #333;
+}
+
+#firstScreen .firstLeft .news .newList p {
+    margin-left: 144px;
+    line-height: 18px;
+    font-size: 14px;
+    height: 36px;
+    overflow: hidden;
+    position: relative;
+    top: 2px;
+    right: 1px;
+}
+
+#firstScreen .firstLeft .news .newList p a {
+    color: #999;
+}
+
+#firstScreen .firstLeft .news .newList h4 a:hover {
+    color: #ff5000;
+}
+
+#firstScreen .firstLeft .news .more {
+    position: absolute;
+    top: 1px;
+    right: 3px;
+    color: #999;
+}
+
+.more span {
+    display: inline-block;
+    margin-left: 3px;
+    text-indent: -6px;
+    vertical-align: -2px;
+    width: 8px;
+    height: 12px;
+    line-height: 12px;
+    color: #999;
+    overflow: hidden;
+}
+
+/* 右边内容 */
+#firstScreen .firstRight {
+    width: 290px;
+    margin-top: 10px;
+}
+
+#firstScreen .firstRight .user {
+    height: 139px;
+    padding-top: 6px;
+    background-image: url(../img/user_bg.png);
+    background-size: 290px 145px;
+}
+
+#firstScreen .firstRight .user .avatar {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 3px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#firstScreen .firstRight .user .avatar img {
+    width: 50px;
+    height: 50px;
+}
+
+#firstScreen .firstRight .user .username {
+    text-align: center;
+    line-height: 16px;
+}
+
+#firstScreen .firstRight .user .members {
+    text-align: center;
+    position: relative;
+    top: 1px;
+    font-size: 0;
+}
+
+#firstScreen .firstRight .user .members a {
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #ff5000;
+    border-radius: 9px;
+    padding: 0 10px 0 20px;
+    text-indent: 1px;
+}
+
+#firstScreen .firstRight .user .members a.gold {
+    background: #ffe4dc url(../img/icon.png) 0 -572.5px no-repeat;
+    padding-left: 19px;
+}
+
+#firstScreen .firstRight .user .members a.club {
+    background: #ffe4dc url(../img/icon.png) 0 -528px no-repeat;
+    margin-left: 5px;
+}
+
+#firstScreen .firstRight .user .btn {
+    margin-top: 10px;
+    height: 32px;
+    padding-left: 15px;
+    font-size: 0;
+    position: relative;
+    top: 3px;
+}
+
+#firstScreen .firstRight .user .btn button {
+    width: 75px;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+    margin-right: 7px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    background-image: linear-gradient(to right, #ff5000, #ff6f06);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff5000', endColorstr='#ffff9000', GradientType=1);
+}
+
+#firstScreen .firstRight .user .btn button.login {
+    width: 92px;
+}
+
+#firstScreen .firstRight .tipOff {
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #f40;
+    background: #ffe4dc;
+    text-indent: 8px;
+}
+
+#firstScreen .firstRight .tipOff i {
+    font-size: 13px;
+    vertical-align: -1px;
+    position: relative;
+    left: 25px;
+}
+
+/* 公告区 */
+
+#firstScreen .firstRight .notice {
+    height: 108px;
+    background-color: #fff;
+}
+
+#firstScreen .firstRight .notice .title {
+    text-align: center;
+    font-size: 0;
+    padding-top: 14px;
+    margin-left: -4px;
+    padding-bottom: 1px;
+}
+
+#firstScreen .firstRight .notice .title li {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 3px;
+    margin: 0 12px;
+}
+
+#firstScreen .firstRight .notice .title li.active {
+    font-weight: bold;
+    border-bottom: 2px solid #f40;
+    margin-right: 11px;
+}
+
+#firstScreen .firstRight .notice .title li a:hover {
+    color: #f40;
+}
+
+#firstScreen .firstRight .notice .content {
+    margin: 0 12px;
+    padding-top: 10px;
+}
+
+#firstScreen .firstRight .notice .content li {
+    height: 25px;
+    line-height: 25px;
+    float: left;
+    width: 130px;
+}
+
+#firstScreen .firstRight .notice .content li a:hover,
+#firstScreen .firstRight .notice .content li.item1 a {
+    color: #ff5000;
+}
+
+#firstScreen .firstRight .notice .content li.item1 {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 图标区域 */
+
+#firstScreen .firstRight .icon {
+    width: 291px;
+    height: 232px;
+    background-color: #fff;
+    table-layout: fixed;
+    /*根据表格宽度自动计算列宽*/
+}
+
+#firstScreen .firstRight .icon td {
+    border: 1px solid #f4f4f4;
+    text-align: center;
+}
+
+#firstScreen .firstRight .icon td a {
+    position: relative;
+    top: 4px;
+}
+
+#firstScreen .firstRight .icon td i {
+    line-height: 34px;
+    color: #333;
+    position: relative;
+    top: -1px;
+}
+
+#firstScreen .firstRight .icon td span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    background: url(../img/icon.png) no-repeat;
+}
+
+#firstScreen .firstRight .icon .item1 span {
+    background-position: 0 0;
+}
+
+#firstScreen .firstRight .icon .item2 span {
+    background-position: 0 -87px;
+}
+
+#firstScreen .firstRight .icon .item3 span {
+    background-position: 0 -44px;
+}
+
+#firstScreen .firstRight .icon .item4 span {
+    background-position: 0 -132px;
+}
+
+#firstScreen .firstRight .icon .item5 span {
+    background-position: 0 -176px;
+}
+
+#firstScreen .firstRight .icon .item6 span {
+    background-position: 0 -220px;
+}
+
+#firstScreen .firstRight .icon .item7 span {
+    background-position: 0 -264px;
+}
+
+#firstScreen .firstRight .icon .item8 span {
+    background-position: 0 -308px;
+}
+
+#firstScreen .firstRight .icon .item9 span {
+    background-position: 0 -352px;
+}
+
+#firstScreen .firstRight .icon .item10 span {
+    background-position: 0 -396px;
+}
+
+#firstScreen .firstRight .icon .item11 span {
+    background-position: 0 -440px;
+}
+
+#firstScreen .firstRight .icon .item12 span {
+    background-position: 0 -484px;
+}
+
+#firstScreen .firstRight .icon td i:hover {
+    color: #f40;
+}
+
+#firstScreen .firstRight .app {
+    height: 111px;
+    background: #fff;
+}
+
+#firstScreen .firstRight .app .title {
+    height: 30px;
+    line-height: 30px;
+    vertical-align: 30px;
+    position: relative;
+    top: 1px;
+}
+
+#firstScreen .firstRight .app .title h3 {
+    font-size: 14px;
+    padding-left: 14px;
+}
+
+#firstScreen .firstRight .app .title a {
+    margin-right: 15px;
+}
+
+#firstScreen .firstRight .app .title a:hover {
+    color: #f40;
+}
+
+#firstScreen .firstRight .app .appIcon {
+    padding-left: 23px;
+    text-align: center;
+    font-size: 0;
+    position: relative;
+    top: 1px;
+    right: 1px;
+}
+
+#firstScreen .firstRight .app .appIcon li {
+    display: inline-block;
+    margin: 0 21px 8px 0;
+}
+
+#firstScreen .firstRight .app .appIcon li img {
+    width: 32px;
+    height: 32px;
+}
+
+/* 有好货 爱逛街 */
+
+.goods {
+    width: 590px;
+    height: 658px;
+    background-color: #fff;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.goods .head {
+    height: 24px;
+    line-height: 24px;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.goods .head h3 {
+    font-size: 0;
+    font-weight: normal;
+}
+
+.goods .head h3 img {
+    height: 24px;
+}
+
+.goods .head h3 span {
+    vertical-align: middle;
+    color: #ccc;
+    font-size: 20px;
+    margin: 0 3px 0 8px;
+}
+
+.goods .head h3 i {
+    font-size: 12px;
+    vertical-align: middle;
+    color: #999;
+}
+
+.goods .head .change {
+    color: #999;
+}
+
+.goods .list {
+    font-size: 0;
+    text-align: center;
+}
+
+.goods .list li {
+    width: 180px;
+    display: inline-block;
+    margin: 0 2px 35px 2px;
+    text-align: left;
+}
+
+.goods .list li .img {
+    display: inline-block;
+    position: relative;
+}
+
+.goods .list li .img img {
+    width: 180px;
+    height: 180px;
+}
+
+.goods .list li .img div {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #4f4f4f;
+    opacity: 0.1;
+}
+
+.goods .list li .img div:hover {
+    opacity: 0.2;
+}
+
+.goods .list li h4 {
+    font-size: 16px;
+    height: 28px;
+    line-height: 28px;
+    font-weight: normal;
+}
+
+.goods .list li h4 a:hover {
+    color: #f40;
+}
+
+.goods .list li p.text {
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.goods .list li p.text a {
+    color: #999;
+}
+
+.goods .list li .comment {
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #35b1ff;
+    margin-top: 12px;
+}
+
+.goods .list li .comment span {
+    font-size: 13px;
+    margin-right: 4px;
+}
+
+/* 爱逛街 */
+
+.shopping .head h3 img {
+    margin-right: 11px;
+    width: 56px;
+    height: 23px;
+    position: relative;
+    bottom: 1px;
+}
+
+.shopping .head a {
+    position: relative;
+    right: 1px;
+}
+
+.shopping .list li p.text {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 44px;
+    line-height: 22px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.shopping .list li p.text span {
+    font-size: 14px;
+    color: #ebebeb;
+    position: relative;
+    top: -5px;
+}
+
+.shopping .list li p.text a:hover {
+    color: #f40;
+}
+
+.shopping .list li .comment {
+    color: #999;
+    margin-left: 10px;
+}
+
+.shopping .list li .comment img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
