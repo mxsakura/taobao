@@ -34,6 +34,12 @@
     color: #f50;
 }
 
+.c6 {
+    color: #8d7afb;
+}
+.c7 {
+    color: #A8C001;
+}
 
 /* 头部一级导航 */
 
@@ -105,12 +111,24 @@
     padding: 8px 0;
 }
 
+#headeMessage li.myTbh .area {
+    width: 250px;
+    height: 270px;
+    overflow-y:scroll;
+    border: 1px solid #EEE;
+    padding: 8px 0;
+}
+
 #headeMessage li.myTbh .myTb a {
     display: block;
     line-height: 28px;
     padding: 0 6px;
     color: #6c6c6c;
     white-space: nowrap;
+}
+
+#headeMessage li.myTbh .area a{
+    color: #3c3c3c;
 }
 
 #headeMessage li.myTbh:hover {
@@ -1106,4 +1124,67 @@
     width: 22px;
     height: 22px;
     border-radius: 50%;
+}
+
+/* 右侧导航 */
+#tool {
+    width: 50px;
+    height: 350px;
+
+    position: fixed;
+    top: 479px;
+    right: 296px;
+}
+
+#tool span{
+    color: #ff7f13;
+    font-size: 32px;
+    width: 50px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    position: absolute;
+    top: -30px;
+}
+
+#tool div{
+    height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#tool div a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: #fff;
+    word-break: keep-all;
+    padding-top: 6px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#tool div a:after{
+    content: '';
+    border-bottom: 1px solid #efefef;
+    width: 34px;
+    position: absolute;
+    left: 8px;
+    bottom: 0;
+}
+
+#tool div a.item6 {
+    line-height: 40px;
+}
+
+#tool div a:hover,#tool div a.active{
+    font-weight: bold;
+    color: #fff;
+    background-image: linear-gradient(135deg, #ff971b, #ff5000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff5000', endColorstr='#ffff6f06', GradientType=1);
+}
+
+#tool div a:hover:after,#tool div a.active:after{
+    border: none;
 }
